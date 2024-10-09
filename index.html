@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>School Countdown</h1>
+        <form id="date-form">
+            <label for="start-date">School Start Date:</label>
+            <input type="date" id="start-date" required>
+            
+            <label for="end-date">School End Date:</label>
+            <input type="date" id="end-date" required>
+            
+            <button type="button" onclick="calculateProgress()">Calculate</button>
+        </form>
+    
+        <div class="results">
+            <h2>Progress Through School Year</h2>
+            <div class="progress-container">
+                <div id="year-progress-bar" class="progress-bar">
+                    <span id="year-percentage-text">0%</span>
+                </div>
+            </div>
+    
+            <div class="countdown">
+                <p id="days-left"></p>
+            </div>
+            
+            <button onclick="resetProgress()" class="reset-btn">Reset</button>
+        </div>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
